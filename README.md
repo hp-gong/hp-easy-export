@@ -40,21 +40,11 @@ These are the 4 current browsers that currently support/display this plugin corr
 
 == Languages and Software ==
 
-
-
 I used Indesign to create the export-overview.pdf file.
 
-
-
-These are the languages and software 
-
-I used for the Easy Export plugin:
-
-
+These are the languages and software I used for the Easy Export plugin:
 
 Language: HTML, CSS, JQuery, OOP PHP, Wordpress Codex
-
-
 
 Software: Atom, Photoshop and Indesign
 
