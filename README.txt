@@ -1,21 +1,44 @@
-﻿# easy-export
+=== Easy Export ===
 
-Export files easily.
+Contributors: hpgong
+Donate link: N/A
+Tags: export, csv
+Version: 1.0.0
+Requires at least: 4.8.1
+Tested up to: 4.8.1
+Stable tag: 1.0.0
+Author: H.P. Gong
+Author URI: https://github.com/hp-gong
+GitHub Plugin URI: https://github.com/hp-gong/hp-easy-export
+GitHub Branch: master
+License: GPL-3.0+
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
 == Description ==
 
-The purpose of Easy Export plugin is to export the data from the database into a CSV files.
+The purpose of Easy Export plugin is to export the data from the database into a CSV & PDF files and also print out.
 
-== Installation == 
-
+== Installation ==
+ 
 1. Upload the plugin from your WordPress Plugins section
-2. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress 
+
+== Changelog == 
+
+
+== Upgrade Notice ==
+
+N/A
+
+== Screenshots == 
+
+N/A
 
 == Instructions ==
 
-The instructions is in the master zip file
+Click here <a href="https://github.com/hp-gong/hp-easy-export/raw/master/export-overview.pdf">export-overview.pdf</a> to download the instructions
 
-Read the export-overview.pdf for more details how the plugin works 
+Read the export-overview.pdf for more details how the plugin works
 
 These are the 4 current browsers that currently support/display this plugin correctly
 
@@ -37,25 +60,3 @@ These are the 4 current browsers that currently support/display this plugin corr
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
 <b>A.</b>  If you deactivate the plugin it will stay on the plugin page and if you delete/remove the plugin it will delete the folders, files.
-
-== Languages and Software ==
-
-
-
-I used Indesign to create the export-overview.pdf file.
-
-
-
-These are the languages and software 
-
-I used for the Easy Export plugin:
-
-
-
-Language: HTML, CSS, JQuery, OOP PHP, Wordpress Codex
-
-
-
-Software: Atom, Photoshop and Indesign
-
--- HP Gong
