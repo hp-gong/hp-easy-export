@@ -20,5 +20,5 @@ function generate1() {
   doc.save('order-list.pdf');
 }
 </script>
-<input type='button' class='btn_gray' name='btn_gray' onclick='javascript:generate1();' value='PDF'>";
+<input type='button' class='btn_gray2' name='btn_gray2' onclick='javascript:generate1();' value='PDF'>";
 ?>

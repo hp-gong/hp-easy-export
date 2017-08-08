@@ -17,8 +17,8 @@ function generate3() {
 
   doc.autoTable(res.columns, res.data);
 
-  doc.save('mailing-list.pdf');
+  doc.save('shipping-list.pdf');
 }
 </script>
-<input type='button' class='btn_gray' name='btn_gray' onclick='javascript:generate3();' value='PDF'>";
+<input type='button' class='btn_gray2' name='btn_gray2' onclick='javascript:generate3();' value='PDF'>";
 ?>

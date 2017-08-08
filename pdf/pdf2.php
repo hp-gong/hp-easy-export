@@ -20,5 +20,5 @@ function generate2() {
   doc.save('billing-list.pdf');
 }
 </script>
-<input type='button' class='btn_gray' name='btn_gray' onclick='javascript:generate2();' value='PDF'>";
+<input type='button' class='btn_gray2' name='btn_gray2' onclick='javascript:generate2();' value='PDF'>";
 ?>

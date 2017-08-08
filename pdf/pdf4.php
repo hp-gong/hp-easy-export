@@ -20,5 +20,5 @@ function generate4() {
   doc.save('product-list.pdf');
 }
 </script>
-<input type='button' class='btn_gray' name='btn_gray' onclick='javascript:generate4();' value='PDF'>";
+<input type='button' class='btn_gray2' name='btn_gray2' onclick='javascript:generate4();' value='PDF'>";
 ?>
