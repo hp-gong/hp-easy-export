@@ -91,12 +91,22 @@ if(!class_exists('HP_Easy_Export')){
 
 		// Verify Nonce Form
 	   public static function validate_form() {
-        if(isset($_POST['btn_grey2s'])){
+        if(isset($_POST['btn_grey2'])){
         if (!isset($_POST['hp_display_export_nonce1']) || !wp_verify_nonce($_POST['hp_display_export_nonce1'], 'hp_easy_export_e2')){
         wp_die('You do not have access to this page.');
         }
         }
-		if(isset($_POST['btn_grey2s'])){
+		if(isset($_POST['btn_grey2'])){
+        if (!isset($_POST['hp_display_export_nonce2']) || !wp_verify_nonce($_POST['hp_display_export_nonce2'], 'hp_easy_export_e1')){
+        wp_die('You do not have access to this page.');
+        }
+        }
+		if(isset($_POST['btn_gray2'])){
+        if (!isset($_POST['hp_display_export_nonce1']) || !wp_verify_nonce($_POST['hp_display_export_nonce1'], 'hp_easy_export_e2')){
+        wp_die('You do not have access to this page.');
+        }
+        }
+		if(isset($_POST['btn_gray2'])){
         if (!isset($_POST['hp_display_export_nonce2']) || !wp_verify_nonce($_POST['hp_display_export_nonce2'], 'hp_easy_export_e1')){
         wp_die('You do not have access to this page.');
         }
