@@ -100,7 +100,7 @@ function exportTableToCSV($table, filename) {
 	   newWin.close();
 	}
 	
-	$('.btn_grey').on('click',function(){
+	$('.btn_grey2').on('click',function(){
 	printData();
 	})  
 	        
