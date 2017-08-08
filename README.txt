@@ -25,6 +25,8 @@ The purpose of Easy Export plugin is to export the data from the database into a
 
 == Changelog == 
 
+= Version 1.0.0 - 08-07-2017 = 
+* First release.
 
 == Upgrade Notice ==
 
