@@ -3,7 +3,7 @@
  * Easy Export
  *
  * Plugin Name: Easy Export
- * Plugin URI: https://github.com/hp-gong/hp-easy-export
+ * Plugin URI: https://wordpress.org/plugins/easy-export/
  * Description: Easy Export export reports.
  * Version: 1.0.0
  * Author: H.P. Gong
@@ -91,12 +91,12 @@ if(!class_exists('HP_Easy_Export')){
 
 		// Verify Nonce Form
 	   public static function validate_form() {
-        if(isset($_POST['btn_greys'])){
+        if(isset($_POST['btn_grey2s'])){
         if (!isset($_POST['hp_display_export_nonce1']) || !wp_verify_nonce($_POST['hp_display_export_nonce1'], 'hp_easy_export_e2')){
         wp_die('You do not have access to this page.');
         }
         }
-		if(isset($_POST['btn_greys'])){
+		if(isset($_POST['btn_grey2s'])){
         if (!isset($_POST['hp_display_export_nonce2']) || !wp_verify_nonce($_POST['hp_display_export_nonce2'], 'hp_easy_export_e1')){
         wp_die('You do not have access to this page.');
         }
@@ -172,7 +172,7 @@ if(!class_exists('HP_Easy_Export')){
 	  include 'pdf/pdf1.php';
 	  echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1'); 
 	  echo '<a id="export1" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
-	  echo '<input type="button" class="btn_grey" name="btn_grey" value="Print Out">
+	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
 	  </form>';
     }
 // The hp_easy_billing_list function will export the Billing List in PDF, CSV and Print
@@ -226,7 +226,7 @@ if(!class_exists('HP_Easy_Export')){
 	include 'pdf/pdf2.php';
     echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
 	  echo '<a id="export2" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
-	  echo '<input type="button" class="btn_grey" name="btn_grey" value="Print Out">
+	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
     </form>';
     }
 
@@ -277,7 +277,7 @@ if(!class_exists('HP_Easy_Export')){
 	   include 'pdf/pdf3.php';
         echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
 	  echo '<a id="export3" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
-	  echo '<input type="button" class="btn_grey" name="btn_grey" value="Print Out">
+	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
         </form>';
         }
 
@@ -331,7 +331,7 @@ if(!class_exists('HP_Easy_Export')){
 		   include 'pdf/pdf4.php';
             echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
 	  echo '<a id="export4" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
-	  echo '<input type="button" class="btn_grey" name="btn_grey" value="Print Out">
+	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
             </form>';
             }
 
@@ -375,7 +375,7 @@ if(!class_exists('HP_Easy_Export')){
           include 'pdf/pdf5.php';
           echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
 	  echo '<a id="export5" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';	  
-	  echo '<input type="button" class="btn_grey" name="btn_grey" value="Print Out">
+	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
              </form>';
           }
        }
