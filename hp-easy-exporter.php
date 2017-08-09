@@ -64,11 +64,11 @@ if(!class_exists('HP_Easy_Export')){
 	   // activated in order for Easy Export plugin to run
 	   public static function check_versions(){
 	    global $woocommerce;
-	    if (version_compare($woocommerce->version, '3.0.7', '<')){
+	    if (version_compare($woocommerce->version, ' 3.1.1 ', '<')){
 	    $url = admin_url('/plugins.php');
 	    require_once(ABSPATH . 'wp-admin/includes/plugin.php');
 	    deactivate_plugins( plugin_basename( __FILE__ ));
-	    wp_die( __('Easy Export is disabled.<br>Easy Export requires a minimum of WooCommerce v3.0.7.<br><a href="'.$url.'">Return to the Plugins section</a>'));
+	    wp_die( __('Easy Export is disabled.<br>Easy Export requires a minimum of WooCommerce v3.1.1 .<br><a href="'.$url.'">Return to the Plugins section</a>'));
 	    }
 	    }
 
@@ -102,12 +102,12 @@ if(!class_exists('HP_Easy_Export')){
         }
         }
 		if(isset($_POST['btn_gray2'])){
-        if (!isset($_POST['hp_display_export_nonce1']) || !wp_verify_nonce($_POST['hp_display_export_nonce1'], 'hp_easy_export_e2')){
+        if (!isset($_POST['hp_display_export_nonce3']) || !wp_verify_nonce($_POST['hp_display_export_nonce3'], 'hp_easy_export_e4')){
         wp_die('You do not have access to this page.');
         }
         }
 		if(isset($_POST['btn_gray2'])){
-        if (!isset($_POST['hp_display_export_nonce2']) || !wp_verify_nonce($_POST['hp_display_export_nonce2'], 'hp_easy_export_e1')){
+        if (!isset($_POST['hp_display_export_nonce4']) || !wp_verify_nonce($_POST['hp_display_export_nonce4'], 'hp_easy_export_e3')){
         wp_die('You do not have access to this page.');
         }
         }
@@ -140,6 +140,7 @@ if(!class_exists('HP_Easy_Export')){
 	  echo '<h2>Order List</h2>
 	  <form method="POST" action="">';
 	  echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
+	  echo wp_nonce_field('hp_easy_export_e3', 'hp_display_export_nonce4');
 	  echo '<div id="dvData1"> 
 	  <table style="border-collapse: collapse; width: 100%; border: 1px solid black; background-color: white; text-align: center;" cellspacing="0" cellpadding="0" id="printReport">
 	  <thead>
@@ -180,8 +181,9 @@ if(!class_exists('HP_Easy_Export')){
 	  </div>
 	  <br>';
 	  include 'pdf/pdf1.php';
-	  echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1'); 
 	  echo '<a id="export1" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
+      echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1'); 
+	  echo wp_nonce_field('hp_easy_export_e4', 'hp_display_export_nonce3'); 
 	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
 	  </form>';
     }
@@ -191,6 +193,7 @@ if(!class_exists('HP_Easy_Export')){
    echo '<h2>Billing List</h2>
    <form method="POST" action="">';
    echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1'); 
+   echo wp_nonce_field('hp_easy_export_e4', 'hp_display_export_nonce3'); 
    echo'
    <div id="dvData2">
    <table style="border-collapse: collapse; width: 100%; border: 1px solid black; background-color: white; text-align: center;" cellspacing="0" cellpadding="0" id="printReport">
@@ -234,8 +237,9 @@ if(!class_exists('HP_Easy_Export')){
 	</div>
 	<br>';
 	include 'pdf/pdf2.php';
-    echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
 	  echo '<a id="export2" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
+	  echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
+	  echo wp_nonce_field('hp_easy_export_e3', 'hp_display_export_nonce4');
 	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
     </form>';
     }
@@ -246,6 +250,7 @@ if(!class_exists('HP_Easy_Export')){
        echo '<h2>Shipping List</h2>
        <form method="POST" action="">';
        echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
+	   echo wp_nonce_field('hp_easy_export_e3', 'hp_display_export_nonce4');
 	   echo'
        <div id="dvData3">
        <table style="border-collapse: collapse; width: 100%; border: 1px solid black; background-color: white; text-align: center;" cellspacing="0" cellpadding="0" id="printReport">
@@ -284,9 +289,10 @@ if(!class_exists('HP_Easy_Export')){
 	   </table>
 	   </div>
 	   <br>';
-	   include 'pdf/pdf3.php';
-        echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
+	 include 'pdf/pdf3.php';
 	  echo '<a id="export3" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
+	  echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
+	  echo wp_nonce_field('hp_easy_export_e4', 'hp_display_export_nonce3');
 	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
         </form>';
         }
@@ -297,6 +303,7 @@ if(!class_exists('HP_Easy_Export')){
            echo '<h2>Product List</h2>
            <form method="POST" action="">';
 		   echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
+		   echo wp_nonce_field('hp_easy_export_e4', 'hp_display_export_nonce3');
 		   echo'
            <div id="dvData4">
            <table style="border-collapse: collapse; width: 100%; border: 1px solid black; background-color: white; text-align: center;" cellspacing="0" cellpadding="0" id="printReport">
@@ -339,8 +346,9 @@ if(!class_exists('HP_Easy_Export')){
            </div>
            <br>';
 		   include 'pdf/pdf4.php';
-            echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
 	  echo '<a id="export4" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
+	  echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
+	  echo wp_nonce_field('hp_easy_export_e3', 'hp_display_export_nonce4');
 	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
             </form>';
             }
@@ -350,6 +358,7 @@ if(!class_exists('HP_Easy_Export')){
             echo '<h2>Mailling List</h2>
             <form method="POST" action="">';
 			echo wp_nonce_field('hp_easy_export_e1', 'hp_display_export_nonce2');
+			echo wp_nonce_field('hp_easy_export_e3', 'hp_display_export_nonce4');
 			echo'
             <div id="dvData5">
             <table style="border-collapse: collapse; width: 100%; border: 1px solid black; background-color: white; text-align: center;" cellspacing="0" cellpadding="0" id="printReport">
@@ -383,8 +392,9 @@ if(!class_exists('HP_Easy_Export')){
           </div>
           <br>';
           include 'pdf/pdf5.php';
-          echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
-	  echo '<a id="export5" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';	  
+	  echo '<a id="export5" style="display:inline-block;box-sizing:border-box;margin:5px;text-align:center;text-decoration:none;cursor:pointer;background-color:transparent;-webkit-transition:all .25s ease;-moz-transition:all .25s ease;-ms-transition:all .25s ease;-o-transition:all .25s ease;transition:all .25s ease;font-size:10px;font-size:0.9rem;line-height:35px;line-height:0.1rem;min-width:50px;min-width:5rem;padding:16px 15px;border-color:#666;border-width:1px;border-style:solid;border-radius:2.5px; border-color:#a794a7;background-color:#a794a7;color:#ffffff; href="#">Export as CSV</a>';
+	  echo wp_nonce_field('hp_easy_export_e2', 'hp_display_export_nonce1');
+      echo wp_nonce_field('hp_easy_export_e4', 'hp_display_export_nonce3');	  
 	  echo '<input type="button" class="btn_grey2" name="btn_grey2" value="Print Out">
              </form>';
           }
