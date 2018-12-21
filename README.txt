@@ -3,10 +3,10 @@
 Contributors: hpgong
 Donate link: N/A
 Tags: csv, pdf, print, export, reports, sales report, order report, product report, category report, customer report, summary, woocommerce
-Version: 1.1.0
-Requires at least: 5.0.0
-Tested up to: 5.0.0
-Stable tag: 1.1.0
+Version: 1.2.0
+Requires at least: 5.0.2
+Tested up to: 5.0.2
+Stable tag: 1.2.0
 Author: H.P. Gong
 Author URI: https://github.com/hp-gong
 GitHub Plugin URI: https://github.com/hp-gong/hp-easy-export
@@ -26,13 +26,13 @@ The purpose of Easy Export plugin is to export the data from the database into a
 
 == Changelog ==
 
-= Version 1.1.0 - 12-20-2018 =
+= Version 1.2.0 - 12-20-2018 =
 * Fixed discrepancy / errors.
 * Modify & Update & Add codes on the plugin.
 * Update README file.
 * Update Instructions for the export-overview.pdf.
-* TEST: Wordpress 5.0.0 - PASS
-* TEST: WooCommerce 3.5.2 - PASS
+* TEST: Wordpress 5.0.2 - PASS
+* TEST: WooCommerce 3.5.3 - PASS
 * Maintenance.
 
 = Version 1.0.1 - 01-01-2018 =
