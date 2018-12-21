@@ -1,15 +1,16 @@
-﻿# easy-export
+# easy-export
 
 Export files easily.
 
 == Description ==
 
-The purpose of Easy Export plugin is to export the data from the database into a CSV files.
+The purpose of Easy Export plugin is to export the data from the database into a CSV & PDF files and also print out spreadsheets.
 
-== Installation == 
+== Installation ==
 
-1. Upload the plugin from your WordPress Plugins section
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Download and activate WooCommerce plugin which is required for Easy Export plugin to work.
+2. Upload the plugin from your WordPress Plugins section.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Instructions ==
 
@@ -19,20 +20,20 @@ Read the export-overview.pdf for more details how the plugin works
 
 These are the 4 current browsers that currently support/display this plugin correctly
 
-1. FireFox (Current Version: 53.0.3 and up)
-2. Chrome (Current Version: 58.0 and up)
-3. Opera (Current Version: 45.0 and up)
-4. Internet Explorer (Last Version: 11)
+1. FireFox (Current Version: 64 and up)
+2. Chrome (Current Version: 71 and up)
+3. Opera (Current Version: 56 and up)
+4. Microsoft Edge (Current Version: 42 and up)
 
 == Frequently Asked Questions == 
 
 <b>Q. What kind of file does the Easy Export plugin export</b>
 
-<b>A.</b> The Easy Export plugin will output the data into a CSV & PDF and also print out.
+<b>A.</b> The Easy Export plugin will output the data into a CSV & PDF and also print out spreadsheets.
 
 <b>Q. How many Lists are there?</b>
 
-<b>A.</b> There are 5 Lists and those lists are: Order List, Billing List, Shipping List, Product List and Mailing List
+<b>A.</b> There are 7 Lists and those lists are: Order List, Sale List, Billing List, Shipping List, Mailing List, Product List and Category List.
 
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
