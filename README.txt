@@ -31,8 +31,8 @@ The purpose of Easy Export plugin is to export the data from the database into a
 * Modify & Update & Add codes on the plugin.
 * Update README file.
 * Update Instructions for the export-overview.pdf.
-* Compatible and tested with Wordpress 5.0.2 
-* Compatible and tested with WooCommerce 3.5.3
+* Compatible and tested with Wordpress: 5.0.2 
+* Compatible and tested with WooCommerce: 3.5.3
 * Maintenance.
 
 = Version 1.0.1 - 01-01-2018 =
