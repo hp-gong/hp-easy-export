@@ -29,15 +29,15 @@ These are the 4 current browsers that currently support/display this plugin corr
 
 <b>Q. What kind of file does the Easy Export plugin export</b>
 
-<b>A.</b> The Easy Export plugin will output the data into a CSV & PDF and also print out spreadsheets.
+The Easy Export plugin will output the data into a CSV & PDF and also print out spreadsheets.
 
 <b>Q. How many Lists are there?</b>
 
-<b>A.</b> There are 7 Lists and those lists are: Order List, Sale List, Billing List, Shipping List, Mailing List, Product List and Category List.
+There are 7 Lists and those lists are: Order List, Sale List, Billing List, Shipping List, Mailing List, Product List and Category List.
 
 <b>Q. What happened if I deactivate the plugin or delete the plugin?</b>
 
-<b>A.</b>  If you deactivate the plugin it will stay on the plugin page and if you delete/remove the plugin it will delete the folders, files.
+If you deactivate the plugin it will stay on the plugin page and if you delete/remove the plugin it will delete the folders, files.
 
 <b>== Languages and Software ==</b>
 
