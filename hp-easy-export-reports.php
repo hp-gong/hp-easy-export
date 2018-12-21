@@ -5,7 +5,7 @@
  * Plugin Name: Easy Export
  * Plugin URI: https://wordpress.org/plugins/easy-export/
  * Description: Easy Export export reports.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: H.P. Gong
  * Author URI: https://github.com/hp-gong/
  * GitHub Plugin URI: https://github.com/hp-gong/hp-easy-export
