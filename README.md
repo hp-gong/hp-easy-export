@@ -2,17 +2,17 @@
 
 Export files easily.
 
-== Description ==
+<b>== Description ==</b>
 
 The purpose of Easy Export plugin is to export the data from the database into a CSV & PDF files and also print out spreadsheets.
 
-== Installation ==
+<b>== Installation ==</b>
 
 1. Download and activate WooCommerce plugin which is required for Easy Export plugin to work.
 2. Upload the plugin from your WordPress Plugins section.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-== Instructions ==
+<b>== Instructions ==</b>
 
 The instructions is in the master zip file
 
@@ -25,7 +25,7 @@ These are the 4 current browsers that currently support/display this plugin corr
 3. Opera (Current Version: 56 and up)
 4. Microsoft Edge (Current Version: 42 and up)
 
-== Frequently Asked Questions == 
+== Frequently Asked Questions ==</b>
 
 <b>Q. What kind of file does the Easy Export plugin export</b>
 
@@ -39,7 +39,7 @@ These are the 4 current browsers that currently support/display this plugin corr
 
 <b>A.</b>  If you deactivate the plugin it will stay on the plugin page and if you delete/remove the plugin it will delete the folders, files.
 
-== Languages and Software ==
+<b>== Languages and Software ==</b>
 
 I used Indesign to create the export-overview.pdf file.
 
