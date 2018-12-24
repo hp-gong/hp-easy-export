@@ -2,6 +2,10 @@
 
 Export files easily.
 
+<b>== Wordpress Page ==</b>
+
+https://wordpress.org/plugins/easy-export/
+
 <b>== Description ==</b>
 
 The purpose of Easy Export plugin is to export the data from the database into a CSV & PDF files and also print out spreadsheets.
